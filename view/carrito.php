@@ -6,7 +6,7 @@
 	$PagoTotal=0;
 	?>
 
-	<nav class="navbar navbar-light" he  style="background-color: #EEEB2B">
+	<nav class="navbar navbar-light" he  style="background-color: #FFC203">
 	        <a href="home.php"><img id=logo1 src="../img/logo.png"></a>
 	        <div class="navbar">
 	        <h3><a class="navbar-brand" href="home.php">Inicio</a></h3>
@@ -19,8 +19,9 @@
 	           <h5> <?php echo $_SESSION["nombre"];?></h5>
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#">Mis Datos</a>
-	          <div class="dropdown-divider"></div>
+	         <!--<a class="dropdown-item" href="#">Mis Datos</a>-->
+			 <a class="dropdown-item" href="product.php">Productos</a> 
+			 <div class="dropdown-divider"></div>
 	          <a class="dropdown-item" href="../controllers/close.php">Cerrar Sesión</a>
 	        </div>
 	      </li>
@@ -72,7 +73,7 @@
 							<input type="hidden" name="arregloQ" value="<?php echo $indice?>">
 							<input type="number" name="contador01" value="<?php echo $value;?>"  min="1" max="500">
 							<hr>
-							<input type="submit" value="+" name="btnMas" class="btn btn-success">
+							<input type="submit" value="Actualizar" name="btnMas" class="btn btn-success">
 				   		 </form>
 					</div>
 				

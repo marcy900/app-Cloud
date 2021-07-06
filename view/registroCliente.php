@@ -4,7 +4,7 @@ include '../controllers/controlRegistroUser.php';
 <?php 
 include 'partials/header.php' 
 ?>
-<nav class="navbar navbar-light" he  style="background-color: #EEEB2B">
+<nav class="navbar navbar-light" he  style="background-color: #FFC203">
         <a href="../index.php"><img id=logo1 src="../img/logo.png"></a>
 </nav>
 

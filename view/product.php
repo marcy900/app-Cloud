@@ -5,7 +5,7 @@ if(isset($_SESSION["datosUsuario"])){
 	require_once "../models/usuarioCrud.php";
  ?>
  <?php include 'partials/header.php' ?>
-<nav class="navbar navbar-light" he  style="background-color: #EEEB2B">
+<nav class="navbar navbar-light" he  style="background-color: #FFC203">
         <a href="home.php"><img id=logo1 src="../img/logo.png"></a>
         <div class="navbar">
         <h3><a class="navbar-brand" href="home.php">Inicio</a></h3>
@@ -18,7 +18,7 @@ if(isset($_SESSION["datosUsuario"])){
            <h5> <?php echo $_SESSION["nombre"];?></h5>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Mis Datos</a>
+         <!-- <a class="dropdown-item" href="#">Mis Datos</a>-->
           <a class="dropdown-item" href="carrito.php">Carrito</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="../controllers/close.php">Cerrar Sesión</a>
@@ -56,13 +56,13 @@ if(isset($_SESSION["datosUsuario"])){
 		<div class="row">
 			<div class="col-lg-12">
 
- <button class="btn btn-outline-primary"  onclick="location.href='carrito.php'">Carrito</button>
+ <button class="btn btn-outline-success"  onclick="location.href='carrito.php'"><h5> Carrito de Compra </h5></button>
 <hr>
 <table  class="table table-sm" border=2px>
 
-	<tr class="bg-warning">
-		<td align="center">Ide</td>
-		<td  align="center">Codigo</td>
+	<tr class="bg-primary">
+		<td align="center">#</td>
+		<!--<td  align="center">Codigo</td>-->
 		<td align="center">Nombre</td>
 		<td  align="center">Caracteristicas</td>
 		<td  align="center">Imagen</td>
@@ -78,9 +78,9 @@ if(isset($_SESSION["datosUsuario"])){
 
 	<tr>
 		<td align="center"><?php echo $mostrar['id'] ?></td>
-		<td align="center"><?php echo $mostrar['codigo'] ?></td>
-		<td align="center"><?php echo $mostrar['nombre_producto'] ?></td>
-		<td><?php echo '<h5>Precio: $ '.$mostrar['precio']."</h5> Descripcion: ".$mostrar['descripcion']."<br>Tamaño: ".$mostrar['tamano'] ?></td>
+		<!--<td align="center"><?php //echo $mostrar['codigo'] ?></td>-->
+		<td valign="middle" align="center"><?php echo $mostrar['nombre_producto'] ?></td>
+		<td id="colur"> <?php echo "<h5>Precio: $ ".$mostrar['precio']."</h5>" ?></td>
 		<td align="center"><?php echo "<img src='../img/imagen/".$mostrar['imagen']."' width='200' height='200'>" ?></td>
 
 		<td align="center">

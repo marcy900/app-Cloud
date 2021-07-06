@@ -6,15 +6,14 @@ session_start();
 if(isset($_SESSION["datosUsuario"])){
  include 'partials/header.php' ?>
 
-<nav class="navbar navbar-light" he  style="background-color: #EEEB2B">
+<nav class="navbar navbar-light" he  style="background-color: #FFC203">
         <a href="home.php"><img id=logo1 src="../img/logo.png"></a>
         <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            <h5> <?php echo $_SESSION["nombre"];?></h5>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Mis Datos</a>
-          <a class="dropdown-item" href="carrito.php">Carrito</a>
+          <a class="dropdown-item" href="product.php">Productos</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="../controllers/close.php">Cerrar Sesión</a>
         </div>
